@@ -1,0 +1,11 @@
+services:
+  portfolio:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: https://dev.mariacacacho.com
+    image: maria-portfolio:latest
+    container_name: maria-portfolio
+    ports:
+      - "3009:3009"
+    restart: unless-stopped

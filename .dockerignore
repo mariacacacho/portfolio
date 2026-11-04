@@ -4,6 +4,8 @@ out
 .git
 .gitignore
 Dockerfile
+compose.yaml
+compose.yaml
 .dockerignore
 .env*
 .DS_Store
