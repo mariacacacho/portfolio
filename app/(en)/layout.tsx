@@ -10,6 +10,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: t.title,
   description: t.description,
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
+  },
   alternates: { canonical: '/en', languages: { es: '/', en: '/en' } },
   openGraph: {
     title: t.title,

@@ -124,17 +124,18 @@ export default function Portfolio({ lang }: { lang: Lang }) {
               <div className="row">
                 <a href={links.tiktok} target="_blank" rel="noopener noreferrer" className="pill pill--cream">tiktok ↗</a>
                 <a href={links.instagram} target="_blank" rel="noopener noreferrer" className="pill pill--cream">instagram ↗</a>
+                <a href={links.mediakit} target="_blank" rel="noopener noreferrer" className="pill pill--dark">media kit →</a>
               </div>
             </div>
             <div className="grid grid--videos">
               {t.videos.map((v) => (
-                <article key={v.img} className="video">
+                <a key={v.img} href={v.url} target="_blank" rel="noopener noreferrer" className="video">
                   <div className="video__thumb" style={{ background: v.bg }}>
                     <Image src={v.img} alt={v.alt} fill sizes="(max-width: 700px) 50vw, 280px" />
                     <span className="video__views">▷ {v.views}</span>
                   </div>
                   <h3>{v.title}</h3>
-                </article>
+                </a>
               ))}
             </div>
           </section>
@@ -209,7 +210,7 @@ export default function Portfolio({ lang }: { lang: Lang }) {
               <a href={links.email} className="pill">{links.emailLabel}</a>
               <a href={links.linkedin} target="_blank" rel="noopener noreferrer" className="pill">linkedin · María Pacheco</a>
               <a href={links.github} target="_blank" rel="noopener noreferrer" className="pill">github.com/mariacacacho</a>
-              <a href={links.site} className="pill">dev.mariacacacho.com</a>
+              <a href={links.site} className="pill">codepen.io/mariacacacho</a>
               <a href={links.tiktok} target="_blank" rel="noopener noreferrer" className="pill">tiktok · {links.handle}</a>
               <a href={links.instagram} target="_blank" rel="noopener noreferrer" className="pill">instagram · {links.handle}</a>
             </div>

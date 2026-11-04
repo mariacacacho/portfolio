@@ -5,12 +5,12 @@ export const links = {
   emailLabel: 'mrcacacho@gmail.com',
   linkedin: 'https://www.linkedin.com/in/mar%C3%ADa-pacheco-30682820b/',
   github: 'https://github.com/mariacacacho',
-  site: 'https://dev.mariacacacho.com',
+  site: 'https://codepen.io/mariacacacho',
   tiktok: 'https://www.tiktok.com/@mariacacacho',
   instagram: 'https://www.instagram.com/mariacacacho/',
   handle: '@mariacacacho',
-  // TODO: sube el PDF del CV a /public y cambia esta ruta
   cv: '/cv-maria-pacheco.pdf',
+  mediakit: 'https://canva.link/mediakit-mariacacacho-2026',
 };
 
 export const marquee = [
@@ -37,7 +37,7 @@ type Project = {
   bg: string;
 };
 
-type Video = { title: string; views: string; img: string; alt: string; bg: string };
+type Video = { title: string; views: string; img: string; alt: string; bg: string; url: string };
 type Job = { role: string; org: string; dates: string; desc: string };
 
 export type Dict = {
@@ -70,16 +70,16 @@ export type Dict = {
 };
 
 const projectsBase = {
-  ro: { img: '/images/rutas-orientales.jpg', stack: 'Google Cloud Run · PostgreSQL', tab: '#8FB8EE', bg: '#B7D3F6' },
-  tienda: { img: '/images/tienda-ro.jpg', stack: 'Cloud Run · Cloudflare', tab: '#C3E35A', bg: '#DDF28E' },
+  ro: { img: '/images/rutas-orientales.jpg', stack: 'Next.js · PostgreSQL · Google Cloud', tab: '#8FB8EE', bg: '#B7D3F6' },
+  tienda: { img: '/images/tienda-ro.jpg', stack: 'Next.js · Billing', tab: '#C3E35A', bg: '#DDF28E' },
   fide: { img: '/images/fideclub.jpg', stack: 'React Native · Expo · Express · PostgreSQL', tab: '#F99B5E', bg: '#FDBF94', phone: true },
 };
 
 const videosBase = [
-  { img: '/images/vid-monitor.jpg', views: '1.4M', bg: '#C9B8E8' },
-  { img: '/images/vid-powerbank.jpg', views: '537.3K', bg: '#D7F26B' },
-  { img: '/images/vid-widgets.jpg', views: '271.9K', bg: '#B7D3F6' },
-  { img: '/images/vid-tech.jpg', views: '207.2K', bg: '#F6F1E9' },
+  { img: '/images/vid-monitor.jpg', views: '1.4M', bg: '#C9B8E8', url: 'https://www.tiktok.com/@mariacacacho/video/7620623336942472468' },
+  { img: '/images/vid-powerbank.jpg', views: '537.3K', bg: '#D7F26B', url: 'https://www.tiktok.com/@mariacacacho/video/7654046463239982357' },
+  { img: '/images/vid-widgets.jpg', views: '271.9K', bg: '#B7D3F6', url: 'https://www.tiktok.com/@mariacacacho/photo/7681542172004437269' },
+  { img: '/images/vid-tech.jpg', views: '207.2K', bg: '#F6F1E9', url: 'https://www.tiktok.com/@mariacacacho/photo/7638418292108987669' },
 ];
 
 export const content: Record<Lang, Dict> = {
@@ -87,18 +87,18 @@ export const content: Record<Lang, Dict> = {
     meta: {
       title: 'María Pacheco — Software Engineer & Tech Creator',
       description:
-        'Ingeniera fullstack con más de 6 años creando productos web y móviles. Senior Applications Developer en TELUS Digital y creadora de contenido tech.',
+        'Software Engineer con más de 6 años creando productos web y móviles. Senior Applications Developer en TELUS Digital y creadora de contenido tech.',
     },
     nav: { label: 'Secciones', projects: 'proyectos', content: 'contenido', experience: 'experiencia', contact: 'contacto', cv: 'CV' },
     hello: 'hola, soy maria —',
-    bio: 'Ingeniera fullstack con más de 6 años creando productos web y móviles, desde el frontend hasta la nube. Senior Applications Developer en TELUS Digital, y en redes comparto el tech que realmente vale la pena.',
+    bio: 'Software Engineer con más de 6 años creando productos web y móviles, desde el frontend hasta la nube. Senior Applications Developer en TELUS Digital, y en redes comparto el tech que realmente vale la pena.',
     ctaDev: 'ver proyectos',
     ctaCreator: 'ver contenido',
     photoAlt: 'María con lentes y suéter rojo frente a sus libreros',
     side1: 'como engineer',
     side1Line: 'Productos web y móviles, del frontend a la nube.',
     side2: 'como creadora',
-    side2Line: 'El tech que realmente vale la pena para tu home office.',
+    side2Line: 'El tech que realmente vale la pena para tu estilo de vida.',
     devPills: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Google Cloud', 'UX · Figma'],
     creatorPills: ['home office', 'gadgets', 'productividad', 'iphone tips'],
     projH: ['proyectos', 'que construí'],
@@ -117,7 +117,7 @@ export const content: Record<Lang, Dict> = {
     expH: 'experiencia',
     jobs: [
       { role: 'Senior Applications Developer', org: 'TELUS Digital · Vancouver, Canadá (remoto)', dates: 'may 2022 — actual', desc: 'Responsable del desarrollo y soporte en producción de requerimientos a la medida en tecnologías frontend y backend.' },
-      { role: 'Fullstack Developer y consultora', org: 'Freelance · Ciudad de Guatemala', dates: '2019 — actual', desc: 'Productos web y móviles de punta a punta para clientes: arquitectura, desarrollo, infraestructura en la nube y facturación.' },
+      { role: 'Fullstack Developer & Consultant', org: 'Freelance · Ciudad de Guatemala', dates: '2019 — actual', desc: 'Productos web y móviles de punta a punta para clientes: arquitectura, desarrollo, infraestructura en la nube y facturación.' },
       { role: 'Jr. Fullstack Developer', org: 'KOR, FLUX Inc. · Vancouver, Canadá (remoto)', dates: 'abr 2020 — abr 2022', desc: 'Desarrollo fullstack de aplicaciones web con React, Node.js, Sass, Jenkins y AWS.' },
     ],
     awardsH: 'reconocimiento y formación',
@@ -143,7 +143,7 @@ export const content: Record<Lang, Dict> = {
     side1: 'as an engineer',
     side1Line: 'Web and mobile products, from frontend to the cloud.',
     side2: 'as a creator',
-    side2Line: 'The tech that is actually worth it for your home office.',
+    side2Line: 'The tech that is actually worth it for your lifestyle.',
     devPills: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Google Cloud', 'UX · Figma'],
     creatorPills: ['home office', 'gadgets', 'productivity', 'iphone tips'],
     projH: ['projects', 'i built'],

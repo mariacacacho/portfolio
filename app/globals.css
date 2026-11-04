@@ -192,8 +192,8 @@ em { font-family: var(--ff-serif); font-weight: 400; letter-spacing: -0.02em; }
 .project__title .mono { font-size: 12px; }
 
 /* videos */
-.video { display: flex; flex-direction: column; gap: 10px; transition: transform .2s ease; }
-.video:hover { transform: translateY(-6px); }
+.video { display: flex; flex-direction: column; gap: 10px; color: inherit; text-decoration: none; transition: transform .2s ease; }
+.video:hover { transform: translateY(-6px); color: inherit; }
 .video__thumb { position: relative; aspect-ratio: 9 / 16; border-radius: var(--radius); overflow: hidden; border: var(--line); }
 .video__thumb img { object-fit: cover; }
 .video__views {
