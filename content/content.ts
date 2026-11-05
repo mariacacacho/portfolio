@@ -9,7 +9,7 @@ export const links = {
   tiktok: 'https://www.tiktok.com/@mariacacacho',
   instagram: 'https://www.instagram.com/mariacacacho/',
   handle: '@mariacacacho',
-  cv: '/cv-maria-pacheco.pdf',
+  cv: '/cv-maria-pacheco-4.pdf',
   mediakit: 'https://canva.link/mediakit-mariacacacho-2026',
 };
 
@@ -99,7 +99,7 @@ export const content: Record<Lang, Dict> = {
     side1Line: 'Productos web y móviles, del frontend a la nube.',
     side2: 'como creadora',
     side2Line: 'El tech que realmente vale la pena para tu estilo de vida.',
-    devPills: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Google Cloud', 'UX · Figma'],
+    devPills: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Google Cloud', 'Claude Code', 'AI agents · MCP', 'UX · Figma'],
     creatorPills: ['home office', 'gadgets', 'productividad', 'iphone tips'],
     projH: ['proyectos', 'que construí'],
     projects: [
@@ -116,7 +116,7 @@ export const content: Record<Lang, Dict> = {
     ],
     expH: 'experiencia',
     jobs: [
-      { role: 'Senior Applications Developer', org: 'TELUS Digital · Vancouver, Canadá (remoto)', dates: 'may 2022 — actual', desc: 'Responsable del desarrollo y soporte en producción de requerimientos a la medida en tecnologías frontend y backend.' },
+      { role: 'Senior Applications Developer', org: 'TELUS Digital · Vancouver, Canadá (remoto)', dates: 'may 2022 — actual', desc: 'Responsable del desarrollo y soporte en producción de requerimientos a la medida en tecnologías frontend y backend, con flujos de trabajo asistidos por IA en el día a día.' },
       { role: 'Fullstack Developer & Consultant', org: 'Freelance · Ciudad de Guatemala', dates: '2019 — actual', desc: 'Productos web y móviles de punta a punta para clientes: arquitectura, desarrollo, infraestructura en la nube y facturación.' },
       { role: 'Jr. Fullstack Developer', org: 'KOR, FLUX Inc. · Vancouver, Canadá (remoto)', dates: 'abr 2020 — abr 2022', desc: 'Desarrollo fullstack de aplicaciones web con React, Node.js, Sass, Jenkins y AWS.' },
     ],
@@ -144,7 +144,7 @@ export const content: Record<Lang, Dict> = {
     side1Line: 'Web and mobile products, from frontend to the cloud.',
     side2: 'as a creator',
     side2Line: 'The tech that is actually worth it for your lifestyle.',
-    devPills: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Google Cloud', 'UX · Figma'],
+    devPills: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Google Cloud', 'Claude Code', 'AI agents · MCP', 'UX · Figma'],
     creatorPills: ['home office', 'gadgets', 'productivity', 'iphone tips'],
     projH: ['projects', 'i built'],
     projects: [
@@ -161,7 +161,7 @@ export const content: Record<Lang, Dict> = {
     ],
     expH: 'experience',
     jobs: [
-      { role: 'Senior Applications Developer', org: 'TELUS Digital · Vancouver, Canada (remote)', dates: 'May 2022 — Present', desc: 'Responsible for development and production support of custom requirements in frontend and backend technologies.' },
+      { role: 'Senior Applications Developer', org: 'TELUS Digital · Vancouver, Canada (remote)', dates: 'May 2022 — Present', desc: 'Responsible for development and production support of custom requirements in frontend and backend technologies, using AI-assisted workflows in day-to-day development.' },
       { role: 'Fullstack Developer & Consultant', org: 'Freelance · Guatemala City', dates: '2019 — Present', desc: 'End-to-end web and mobile products for clients: architecture, development, cloud infrastructure and billing.' },
       { role: 'Jr. Fullstack Developer', org: 'KOR, FLUX Inc. · Vancouver, Canada (remote)', dates: 'Apr 2020 — Apr 2022', desc: 'Fullstack development of web applications with React, Node.js, Sass, Jenkins and AWS.' },
     ],
